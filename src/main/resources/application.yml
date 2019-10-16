@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    #   数据源基本配置
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/dhm
+#    表名相同时覆盖
+  main:
+    allow-bean-definition-overriding: true
+
+  jpa:
+    hibernate:
+#      更新或创建数据表结构
+      ddl-auto: update
+#      控制台打印sql
+    show-sql: true
